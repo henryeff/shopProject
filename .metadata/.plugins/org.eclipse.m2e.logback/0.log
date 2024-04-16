@@ -571,3 +571,9 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.webjars:p
 2024-04-16 17:19:54,581 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-04-16 17:19:54,583 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-04-16 17:19:54,589 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\HendryEff\Documents\myProject\myproject\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-04-16 19:40:44,973 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-04-16 19:40:44,978 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-04-16 19:40:44,983 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\HendryEff\Documents\myProject\myproject\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
+2024-04-16 19:41:07,646 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-04-16 19:41:07,649 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-04-16 19:41:07,660 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\HendryEff\Documents\myProject\myproject\ShopmeProject\ShopmeWebParent\ShopmeBackEnd\src\test\resources
