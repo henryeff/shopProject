@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UserRepositoryTests.testCreateUser" project="ShopmeBackEnd" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.shopme.admin.user.UserRepositoryTests" time="1.445" displayname="UserRepositoryTests" uniqueid="[engine:junit-jupiter]/[class:com.shopme.admin.user.UserRepositoryTests]">
+    <testcase name="testCreateUser" classname="com.shopme.admin.user.UserRepositoryTests" time="1.444" displayname="testCreateUser()" uniqueid="[engine:junit-jupiter]/[class:com.shopme.admin.user.UserRepositoryTests]/[method:testCreateUser()]">
+      <error>org.hibernate.InstantiationException: No default constructor for entity 'com.shopme.common.entity.Role'&#13;
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:93)&#13;
+	at org.hibernate.persister.entity.AbstractEntityPersister.instantiate(AbstractEntityPersister.java:4586)&#13;
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1463)&#13;
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.instantiateEntity(AbstractEntityInitializer.java:691)&#13;
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveEntityInstance(AbstractEntityInitializer.java:684)&#13;
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveInstance(AbstractEntityInitializer.java:650)&#13;
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveEntityInstance(AbstractEntityInitializer.java:568)&#13;
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveInstance(AbstractEntityInitializer.java:403)&#13;
+	at org.hibernate.sql.results.internal.InitializersList.resolveInstances(InitializersList.java:88)&#13;
+	at org.hibernate.sql.results.internal.StandardRowReader.coordinateInitializers(StandardRowReader.java:108)&#13;
+	at org.hibernate.sql.results.internal.StandardRowReader.readRow(StandardRowReader.java:86)&#13;
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:188)&#13;
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)&#13;
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:209)&#13;
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:83)&#13;
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:76)&#13;
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:65)&#13;
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:145)&#13;
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:117)&#13;
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.load(SingleIdEntityLoaderStandardImpl.java:75)&#13;
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:3748)&#13;
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3737)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:604)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromCacheOrDatasource(DefaultLoadEventListener.java:590)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:560)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:544)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:207)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadWithRegularProxy(DefaultLoadEventListener.java:290)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:242)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:111)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:68)&#13;
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)&#13;
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1222)&#13;
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1210)&#13;
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:209)&#13;
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.doLoad(IdentifierLoadAccessImpl.java:160)&#13;
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.lambda$load$1(IdentifierLoadAccessImpl.java:149)&#13;
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.perform(IdentifierLoadAccessImpl.java:112)&#13;
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:149)&#13;
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:2424)&#13;
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:2390)&#13;
+	at org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager.find(TestEntityManager.java:163)&#13;
+	at com.shopme.admin.user.UserRepositoryTests.testCreateUser(UserRepositoryTests.java:29)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	Suppressed: org.springframework.transaction.UnexpectedRollbackException: Transaction silently rolled back because it has been marked as rollback-only&#13;
+		at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:803)&#13;
+		at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757)&#13;
+		at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:135)&#13;
+		at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:259)&#13;
+		at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:487)&#13;
+		at org.springframework.test.context.junit.jupiter.SpringExtension.afterEach(SpringExtension.java:278)&#13;
+		... 2 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>
